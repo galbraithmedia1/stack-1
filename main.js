@@ -8,8 +8,8 @@ const button = document.querySelector(".button");
 
 const test = () => {
     console.log("test");
-  axios.get("https://swapi.dev/api/people/3").then((res) => {
-    let weather = res.data.name;
+  axios.get("https://api.openweathermap.org/data/2.5/weather?lat=40.39&lon=-111.85&appid=ed088ac32004347c3513041d87c48e51").then((res) => {
+    let weather = res.data.weather[0].main;
     // let weather = 20
     console.log(weather);
     
