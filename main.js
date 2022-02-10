@@ -9,13 +9,14 @@ const test = () => {
   console.log("test");
   axios
     .get(
-      `https://api.openweathermap.org/data/2.5/weather?lat=40.39&lon=-111.85&appid=${Key}`
+      `https://api.openweathermap.org/data/2.5/weather?lat=40.39&lon=-111.85&units=imperial&appid=${Key}`
     )
     .then((res) => {
-      let weather = res.data.weather[0].main;
+      let weather = res.data.main.temp;
       console.log(weather);
 
-      let text = document.createTextNode(weather);
+    let temperature = `${weather} °`
+      let text = document.createTextNode(temperature);
       temp.appendChild(text);
     });
 };
