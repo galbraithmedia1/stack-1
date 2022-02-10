@@ -22,8 +22,10 @@ const test = () => {
   });
 };
 
-temp.addEventListener("load", test);
-button.addEventListener("click", test)
+test()
+
+// temp.addEventListener("load", test);
+// button.addEventListener("click", test)
 
 
 
