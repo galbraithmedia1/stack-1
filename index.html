@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./index.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <section>
+      <div class="container">
+        <div class="top-div">
+          <h1 class="temp">9°</h1>
+          <h3>Chilly</h3>
+        </div>
+        <div class="bottom-div">
+          <div class="info-div">
+            <div class="future">
+              <h3>Monday</h3>
+              <div class="small-text">
+                <p>17°</p>
+                <p class="fade">Cloudy</p>
+              </div>
+            </div>
+           
+            <div class="line"></div>
+            <div class="future1">
+              <h3>Tuesday</h3>
+              <div class="small-text">
+                <p>13°</p>
+                <p class="fade">Rainy</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+<script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script> 
+<script type="text/javascript">
+particlesJS("particles-js",
+REPLACE THIS LINE WITH THE CODE YOU HAVE DOWNLOADED
+  );var count_particles, stats, update; stats = new Stats; stats.setMode(0); stats.domElement.style.position = 'absolute'; stats.domElement.style.left = '0px'; stats.domElement.style.top = '0px'; document.body.appendChild(stats.domElement); count_particles = document.querySelector('.js-count-particles'); update = function() { stats.begin(); stats.end(); if (window.pJSDom[0].pJS.particles && window.pJSDom[0].pJS.particles.array) { count_particles.innerText = window.pJSDom[0].pJS.particles.array.length; } requestAnimationFrame(update); }; requestAnimationFrame(update);;
+</script>
+
+    <script src="./node_modules/axios/dist/axios.min.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>
