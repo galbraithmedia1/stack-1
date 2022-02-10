@@ -1,1 +1,1 @@
-# stack-1
+# stack-1 Weather APP from Scratch
